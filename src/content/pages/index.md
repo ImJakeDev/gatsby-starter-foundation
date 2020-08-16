@@ -1,11 +1,11 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
+title: Jake Schaffer
+tagline: Full Stack Software Engineer
 featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
 cta:
-  ctaText: Know more
+  ctaText: Hit me up!
   ctaLink: /about
 ---
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+My mission is to create, connect, and inspire technology for changemakers, so they can achieve their vision.
