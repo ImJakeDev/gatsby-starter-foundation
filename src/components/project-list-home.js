@@ -13,7 +13,7 @@ const ProjectMaker = ({ data }) => (
       </span>
     </h2>
     <div className="grids col-1 sm-2 lg-3">{data}</div>
-    <Link className="button" to="/blog">
+    <Link className="button" to="/project">
       See more
       <span class="icon -right">
         <RiArrowRightSLine />
