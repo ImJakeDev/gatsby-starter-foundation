@@ -5,6 +5,7 @@ import { RiArrowRightSLine } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
+import ProjectListHome from "../components/project-list-home"
 import SEO from "../components/seo"
 
 export const pageQuery = graphql`
@@ -59,6 +60,7 @@ const HomePage = ({ data }) => {
         </div>
       </div>
       <BlogListHome/>
+      <ProjectListHome/>
 		</Layout>
 	)
 }
