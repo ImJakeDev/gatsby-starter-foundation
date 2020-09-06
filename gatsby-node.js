@@ -1,12 +1,18 @@
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// creatPages export
 exports.createPages = async ({ actions, graphql, reporter }) => {
+  // deconstructed from actions
   const { createPage } = actions
 
-  //const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  // blogList is the path to the template file
   const blogList = path.resolve(`./src/templates/blog-list.js`)
 
+  // projectList is the path to the template file
+  const projectList = path.resolve(`./src/templates/project-list.js`)
+
+  // result will be a GraphQL query that returns a node object
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -52,6 +58,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         next,
       },
     })
+
   })
 
   // Create blog-list pages
@@ -69,10 +76,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         currentPage: i + 1,
       },
     })
+    createPage({
+      path: i === 0 ? `/project` : `/project/${i + 1}`,
+      component: projectList,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
   })
-
 }
 
+// conCreateNode export
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {

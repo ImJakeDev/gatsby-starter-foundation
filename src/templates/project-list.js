@@ -90,7 +90,7 @@ class ProjectIndex extends React.Component {
       isFirst,
       prevPage,
       numPages,
-      blogSlug,
+      projectSlug,
       currentPage,
       isLast,
       nextPage,
