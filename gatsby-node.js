@@ -66,6 +66,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const numPages = Math.ceil(posts.length / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
+    // createPages for blog collection
     createPage({
       path: i === 0 ? `/blog` : `/blog/${i + 1}`,
       component: blogList,
@@ -76,6 +77,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         currentPage: i + 1,
       },
     })
+    // createPages for project collection
     createPage({
       path: i === 0 ? `/project` : `/project/${i + 1}`,
       component: projectList,
