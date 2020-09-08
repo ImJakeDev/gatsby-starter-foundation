@@ -3,7 +3,7 @@
   Github: https://github.com/stackrole/css-grid-utility
 */
 
-// Chnage these as per your requirement
+// Change these as per your requirement
 $columns: 1, 2, 3;
 
 // these are just placeholders for reference, change the actual values in mixin: grid-gen 
@@ -33,7 +33,7 @@ $columns: 1, 2, 3;
 
 @mixin grid-gen {
   // Add or Remove grid creation
-  @include mq-grids("col", 576px); // this wil create basic grid that is mobile-first, do not remove utill you are sure
+  @include mq-grids("col", 576px); // this wil create basic grid that is mobile-first, do not remove until you are sure
   @include mq-grids("sm", 576px);
   @include mq-grids("md", 768px);
   @include mq-grids("lg", 992px);
