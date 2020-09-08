@@ -2,10 +2,9 @@
   "meta": {
     "title": "ImJake.Dev",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing-fast personal website and a blog, Built with Gatsby and Netlify CMS. ",
-    "siteUrl": "https://nostalgic-snyder-d0409a.netlify.app",
-    "image": "/assets/stackrole.png",
-    "twitterUsername": ""
+    "description": "My mission is to create, connect, and inspire technology for changemakers, so they can achieve their vision.",
+    "siteUrl": "https://www.imjake.dev",
+    "image": "/assets/stackrole.png"
   },
   "ga": "UA-XXXXXXXXX-X"
 }
