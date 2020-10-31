@@ -203,10 +203,15 @@ label {
 }
 .post-card {
   padding: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  // border: 1px solid rgba(0, 0, 0, 0.08);
+  // background-color: #fff;
+  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
+
+  // color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--slate);
+
   transition: box-shadow 0.3s linear;
   .featured-image {
     border-radius: 12px;
@@ -220,14 +225,15 @@ label {
     font-size: 20px;
     font-weight: 600;
     a {
-      color: var(--post-link-color);
+      color: var(--lightest-slate);
     }
   }
   &:hover {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    // border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--green);
+    // box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
     .title {
-      color: var(--button-alternate-color);
+      color: var(--green);
     }
   }
   .meta {
@@ -237,6 +243,9 @@ label {
   }
   .post-content {
     margin-top: 16px;
+    time {
+      color: var(--lightest-slate);
+    }
   }
   @media (max-width: $breakpoint-md) {
     padding: 0;

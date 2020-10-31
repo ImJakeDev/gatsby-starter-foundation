@@ -8,14 +8,14 @@ const ProjectMaker = ({ data }) => (
   <section className="home-posts">
     <h2>
       Latest in <strong>Projects</strong>{" "}
-      <span class="icon -right">
+      <span className="icon -right">
         <RiArrowDownLine />
       </span>
     </h2>
     <div className="grids col-1 sm-2 lg-3">{data}</div>
     <Link className="button" to="/project">
       See more
-      <span class="icon -right">
+      <span className="icon -right">
         <RiArrowRightSLine />
       </span>
     </Link>
