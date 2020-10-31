@@ -7,6 +7,9 @@
 // 	grid-template-rows: 60px auto 60px;
 // 	min-height: 100vh;
 // }
+#___gatsby {
+  background-color: var(--navy);
+}
 .primary-container main {
   min-height: calc(100vh - 60px - 81px);
 }
@@ -15,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background: var(--header-bg);
+  background-color: var(--navy);
   padding: 30px 30px;
 }
 // ----- Start of Site Navigation Styles -----
@@ -155,6 +158,7 @@
 .home-banner {
   padding: 60px 0;
   align-items: center;
+  color: var(--lightest-slate);
   .title {
     font-size: 48px;
     line-height: 48px;
@@ -165,7 +169,6 @@
     font-size: 24px;
     margin-top: 0;
     margin-top: 2px;
-    color: rgba(0, 0, 0, 0.7);
   }
   .description {
     font-size: 20px;
@@ -386,7 +389,7 @@ article img {
 .site-footer {
   display: flex;
   align-items: center;
-  background: #eee;
+  background-color: var(--navy);
   text-align: center;
   font-size: 14px;
   padding: 20px 0;
