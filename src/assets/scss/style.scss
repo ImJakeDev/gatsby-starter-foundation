@@ -13,6 +13,15 @@
 .primary-container main {
   min-height: calc(100vh - 60px - 81px);
 }
+h1,
+h2,
+h3,
+p,
+em,
+strong,
+li {
+  color: var(--lightest-slate);
+}
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -33,20 +42,20 @@
     margin-left: 20px;
   }
   a {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--lightest-slate);
     text-decoration: none;
     // &:hover {
     //   color: rgba(255, 255, 255, 0.8);
     // }
   }
   a[aria-current="page"] {
-    color: rgba(255, 255, 255, 1);
+    color: var(--lightest-slate);
   }
   // ---------------------
   ul li a {
     position: relative;
     display: block;
-    color: #ffffff;
+    color: var(--lightest-slate);
     padding: 3px 0;
     transition: color 0.3s ease;
   }
@@ -57,7 +66,7 @@
     height: 1.5px;
     top: 100%;
     left: 0;
-    background: #ffffff;
+    background: var(--lightest-slate);
     transition: transform 0.3s;
     transform: scaleX(0);
     transform-origin: 50% 50%;
@@ -72,7 +81,7 @@
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: var(--lightest-slate);
     padding: 0;
     cursor: pointer;
   }
@@ -145,10 +154,10 @@
 .site-logo {
   font-weight: bold;
   a {
-    color: #fff;
+    color: var(--lightest-slate);
     text-decoration: none;
     &:hover {
-      color: #fff;
+      color: var(--lightest-slate);
     }
   }
   @media (max-width: $breakpoint-lg) {
@@ -253,7 +262,7 @@
   }
   time {
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--lightest-slate);
   }
 }
 @media (max-width: $breakpoint-sm) {
@@ -304,18 +313,21 @@ article img {
   display: inline-flex;
   align-items: center;
   padding: var(--padding) calc(var(--padding) * 2);
-  background-color: var(--button-alternate-color);
-  color: var(--button-color);
+  // background-color: var(--button-alternate-color);
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  // color: var(--button-color);
   border-radius: 12px;
   text-decoration: none;
   appearance: none;
-  border: none;
+  // border: none;
   font-size: inherit;
   line-height: 1;
   transition: background 0.3s linear;
   &:hover {
-    background-color: var(--button-color);
-    color: var(--button-alternate-color);
+    background-color: var(--green-tint);
+    color: var(--green);
   }
   &.-outline {
     color: var(--primary-color);
@@ -442,7 +454,7 @@ article img {
     p {
       font-size: 14px;
       margin: 0 0 5px;
-      color: rgba(0, 0, 0, 0.5);
+      color: var(--lightest-slate);
     }
     a {
       font-weight: normal;
