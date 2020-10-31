@@ -160,7 +160,7 @@ collections:
               - widget: image
                 name: image
                 label: image
-                default: '/assets/stackrole.png'
+                default: '/assets/icons8-developer-80.png'
               - widget: string
                 name: twitterUsername
                 label: Twitter

@@ -19,7 +19,8 @@ h3,
 p,
 em,
 strong,
-li {
+li, 
+label {
   color: var(--lightest-slate);
 }
 .site-header {
@@ -377,7 +378,7 @@ article img {
 .contact-form {
   margin-top: 36px;
   label {
-    color: var(--label-text);
+    color: var(--lightest-slate);
   }
   input,
   textarea {
@@ -407,7 +408,7 @@ article img {
   padding: 20px 0;
   p {
     margin: 0;
-    color: #777;
+    color: var(--lightest-slate);
   }
   a {
     font-weight: normal;
@@ -432,7 +433,7 @@ article img {
     font-weight: bold;
     line-height: 1;
     &.is-active {
-      color: var(--header-bg);
+      color: var(--green-tint);
       pointer-events: none;
     }
   }
