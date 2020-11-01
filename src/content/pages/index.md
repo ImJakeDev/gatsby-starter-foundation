@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Jake Schaffer
 tagline: Full Stack Software Engineer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+featuredImage: /assets/safar-safarov-msn8tfhj0is-unsplash.jpg
 cta:
   ctaText: Hit me up!
   ctaLink: /contact
